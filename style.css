@@ -1,0 +1,46 @@
+:root {
+    --textcolor: white;
+    --backgroundcolor: black;
+    --butoncolor: green;
+    --buttonhover:green;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--textcolor);
+    background-color: var(--backgroundcolor);
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    margin: 15px;
+}
+
+main div {
+    padding: 40px;
+    border: dotted 1pt white;
+    margin: 15px;
+}
+
+main button {
+    padding: 10px;
+    font-size: large;
+    color: var(--textcolor);
+    background-color: var(--butoncolor);
+    border-radius: 25px;
+}
+
+button:focus {
+    outline: none;
+}
