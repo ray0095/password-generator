@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Password Generator</title>
 </head>
 <body>
@@ -16,11 +17,12 @@
         <h2>Generate a Password</h2>
 
         <div>
-            <h3>your password</h3>
+            <h3>Generate Password</h3>
+            <input type="text" id="passBox"><br>
+            <input type="range" min="28" max="128" name="rangeBar" id="rangeBar"><br>
+            <button onclick="passwordGen()" id="button">Generate Password</button>
         </div>
-
-        <button>Generate Password</button>
     </main>
-    
+
 </body>
 </html>
