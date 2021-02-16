@@ -12,24 +12,43 @@
 }
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: var(--textcolor);
     background-color: var(--backgroundcolor);
     text-align: center;
 }
 
 header {
-    text-align: center;
+    text-align: left;
     padding: 20px;
+    text-align: center;
 }
 
 main {
     margin: 15px;
+    font-size: large;
+    display: block;
+    align-items: center;
+}
+
+main input {
+    width: 100%;
+    font-size: xx-large;
+}
+
+main input .checkbox{
+    color: var(--textcolor);
 }
 
 main div {
+    margin: auto;
+    width: 50%;
+    border: dotted white 2px;
     padding: 40px;
-    border: dotted 1pt white;
+   
+}
+
+main h3 {
     margin: 15px;
 }
 
