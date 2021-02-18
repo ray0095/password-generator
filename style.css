@@ -47,8 +47,9 @@ main input .checkbox{
 main div {
     margin: auto;
     width: 50%;
-    border: dotted white 2px;
+    border: solid white 2px;
     padding: 40px;
+    border-radius: 25px;
    
 }
 
@@ -62,6 +63,7 @@ main button {
     color: var(--textcolor);
     background-color: var(--butoncolor);
     border-radius: 25px;
+    margin: 15px;
 }
 
 button:focus {
