@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
 <body>
     <header>
+        <i id="shield" class="fa fa-shield"></i>
         <h1>Password Generator</h1>
     </header>
 
     <main>
 
-        <div>
+        <div class="form">
             <h3>Generate Password</h3>
             <input type="text" id="passBox"><br>
             <p>Please indicate a password length (min 8, max 128)</p>
             <input type="range" min="8" max="128" name="rangeBar" id="rangeBar" oninput="updateTextInput(this.value);">
             <input type="text" id="textInput" value="">
             <p>Please select at least one criteria</p>
-            <input type="checkbox" id="Uppercase" class="checkbox">Include uppercase?</input>
-            <input type="checkbox" id="Lowercase" class="checkbox">Include lowercase?</input>
-            <input type="checkbox" id="Numbers" class="checkbox">Include numbers?</input>
-            <input type="checkbox" id="Special" class="checkbox">Include special characters?</input><br>
+            <div>
+                <input type="checkbox" id="Uppercase" class="checkbox">Include uppercase?</input>
+                <input type="checkbox" id="Lowercase" class="checkbox">Include lowercase?</input>
+                <input type="checkbox" id="Numbers" class="checkbox">Include numbers?</input>
+                <input type="checkbox" id="Special" class="checkbox">Include special characters?</input><br>
+            </div>
             <button onclick="passwordGen()" id="button">Generate Password</button>
         </div>
     </main>
