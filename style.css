@@ -11,6 +11,10 @@
     margin: 0;
 }
 
+p {
+    color: white;
+}
+
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: var(--textcolor);

@@ -9,6 +9,11 @@
     const caseNumbers=document.getElementById('Numbers'); //grabbing user input for Lowercase criteria
     const caseSpecial=document.getElementById('Special'); //grabbing user input for Lowercase criteria
 
+    function updateTextInput(val) {
+        document.getElementById('textInput').value=val; 
+      }
+    updateTextInput();
+
     function passwordGen() {   
 
         const passLength = document.getElementById('rangeBar').value; //password length identified by the "range bar" value in html
@@ -40,5 +45,7 @@
         document.getElementById('passBox').value = password;
         
     }
+
+
 
 
