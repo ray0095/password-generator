@@ -36,13 +36,19 @@
             userArray = userArray+Special;
             console.log(userArray);
         }
-
-        for(var i = 0; i <= passLength; i++) { 
-            password = password + userArray.charAt(Math.floor(Math.random() * Math.floor(userArray.length - 1)));
-            console.log(passLength);
+        if  (userArray === "") {
+                window.alert("Please select at least one criteria");
         }
+        else {
 
-        document.getElementById('passBox').value = password;
+            for(var i = 0; i < passLength; i++) { 
+                password = password + userArray.charAt(Math.floor(Math.random() * Math.floor(userArray.length - 1)));
+                console.log(passLength);
+            }
+
+            document.getElementById('passBox').value = password;
+
+        }
         
     }
 
